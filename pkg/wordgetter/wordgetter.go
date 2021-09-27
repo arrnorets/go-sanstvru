@@ -13,7 +13,7 @@ type Sanstv struct {
 	wordDescription string //URL with guessedWord description
 }
 
-func (s *Sanstv) initialize() {
+func (s *Sanstv) Initialize() {
 
 	url := "https://sanstv.ru/randomWord/lang-ru/strong-2/count-1/word-???????ajax=#result&lang=ru&strong=2&count=1&word="
 
@@ -64,10 +64,10 @@ func (s *Sanstv) initialize() {
 	s.wordDescription = "https://sanstv.ru" + randomWordURI
 }
 
-func (s *Sanstv) getWord() string {
+func (s *Sanstv) GetWord() string {
 	return s.guessedWord
 }
 
-func (s *Sanstv) getDesc() string {
+func (s *Sanstv) GetDesc() string {
 	return s.wordDescription
 }
